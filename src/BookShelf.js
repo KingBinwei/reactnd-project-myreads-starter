@@ -3,11 +3,13 @@ import PropTypes from 'prop-types'
 import ShelfItem from './ShelfItem'
 
 class BookShelf extends React.Component {
+
     static propTypes = {
         updateShelf: PropTypes.func.isRequired,
         bookList: PropTypes.array.isRequired,
         shelfName: PropTypes.string.isRequired
     }
+    
     render() {
         const { updateShelf, bookList, shelfName } = this.props
         return (
